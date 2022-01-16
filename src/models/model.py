@@ -1,11 +1,13 @@
-import matplotlib.pyplot as plt
+from typing import Callable, List, Optional, Tuple, Union
+
+import matplotlib.pyplot as plt # type: ignore
 import torch
 import torch.nn.functional as F
 from torch import nn
 
 
 class MyAwesomeModel(nn.Module):
-    def __init__(self, hidden_size, output_size, drop_p=0.3):
+    def __init__(self, hidden_size: int, output_size: int, drop_p: float = 0.3) -> None:
         """Builds a feedforward network with arbitrary hidden layers.
 
         Arguments
@@ -51,7 +53,11 @@ class MyAwesomeModel(nn.Module):
         return F.log_softmax(self.fc2(x), dim=1)
 
 
-def validation(model, testloader, criterion):
+def validation(
+    model: nn.Module,
+    testloader: torch.utils.data.DataLoader,
+    criterion: Union[Callable, nn.Module],
+) -> Tuple[float, float]:
     accuracy = 0
     test_loss = 0
     for images, labels in testloader:
@@ -73,8 +79,14 @@ def validation(model, testloader, criterion):
 
 
 def train(
-    model, trainloader, testloader, criterion, optimizer=None, epochs=5, print_every=40
-):
+    model: nn.Module,
+    trainloader: torch.utils.data.DataLoader,
+    testloader: torch.utils.data.DataLoader,
+    criterion: Union[Callable, nn.Module],
+    optimizer: Optional[torch.optim.Optimizer] = None,
+    epochs: int = 5,
+    print_every: int = 40,
+) -> None:
     if optimizer is None:
         optimizer = torch.optim.SGD(model.parameters(), lr=1e-3)
     steps = 0
