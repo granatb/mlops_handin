@@ -54,7 +54,7 @@ class TrainOREvaluate(object):
 
         
     def evaluate(self):
-
+        
         def load_checkpoint(filepath):
             checkpoint = torch.load(filepath)
             my_model = MyAwesomeModel(checkpoint['hidden_size'],

@@ -2,22 +2,8 @@ import torch
 import torch.nn.functional as F
 from torch import nn
 
-class MyAwesomeModel(nn.Module):
-    def __init__(self, input_size, output_size, hidden_layers, drop_p=0.5):
-        ''' Builds a feedforward network with arbitrary hidden layers.
-        
-            Arguments
-            ---------
-            input_size: integer, size of the input layer
-            output_size: integer, size of the output layer
-            hidden_layers: list of integers, the sizes of the hidden layers
-        
-        '''
-        super().__init__()
-        # Input to a hidden layer
-import torch
-import torch.nn.functional as F
-from torch import nn
+import matplotlib.pyplot as plt
+
 
 class MyAwesomeModel(nn.Module):
     def __init__(self, hidden_size, output_size, drop_p=0.3):
@@ -25,9 +11,9 @@ class MyAwesomeModel(nn.Module):
         
             Arguments
             ---------
-            input_size: integer, size of the input layer
-            output_size: integer, size of the output layer
-            hidden_layers: list of integers, the sizes of the hidden layers
+            hidden_size: integer, size of dense layer
+            output_size: number of classes
+            drop_p: dropout rate
         
         '''
         super().__init__()
@@ -40,21 +26,21 @@ class MyAwesomeModel(nn.Module):
                       kernel_size=3, 
                       padding=1,
                       stride=1),
-            # output dim (16, 28, 28)
+            # convolution output dim (16, 28, 28)
             nn.BatchNorm2d(16),
             nn.MaxPool2d(kernel_size=2, 
                          stride=2),
-            # output dim (16, 14, 14)
+            # pooling output dim (16, 14, 14)
             nn.ReLU(inplace=True),
             nn.Conv2d(in_channels=16, 
                       out_channels=8, 
                       kernel_size=5, 
                       padding=2),
             nn.Dropout2d(p=drop_p),
-            # output dim (8, 14, 14)
+            # convolution output dim (8, 14, 14)
             nn.MaxPool2d(kernel_size=2,
                          stride=2),
-            # output dim (8, 7, 7)
+            # polling output dim (8, 7, 7)
             nn.ReLU(inplace=True)
         )
         
@@ -101,6 +87,10 @@ def train(model, trainloader, testloader, criterion, optimizer=None, epochs=5, p
         optimizer = torch.optim.SGD(model.parameters(), lr=1e-3)
     steps = 0
     running_loss = 0
+    train_losses = []
+    val_losses = []
+    iter_num = []
+
     for e in range(epochs):
         # Model in training mode, dropout is on
         model.train()
@@ -132,7 +122,16 @@ def train(model, trainloader, testloader, criterion, optimizer=None, epochs=5, p
                       "Test Loss: {:.3f}.. ".format(test_loss/len(testloader)),
                       "Test Accuracy: {:.3f}".format(accuracy/len(testloader)))
                 
+                train_losses.append(running_loss/print_every)
+                val_losses.append(test_loss/len(testloader))
+                iter_num.append(steps)
+
                 running_loss = 0
                 
                 # Make sure dropout and grads are on for training
                 model.train()
+    
+    plt.plot(iter_num, train_losses, label='train_loss')
+    plt.plot(iter_num, val_losses, label='test_loss')
+    plt.legend()
+    plt.savefig('reports/figures/training.png')

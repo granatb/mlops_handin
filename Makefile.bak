@@ -36,7 +36,7 @@ clean:
 
 ## Run train script
 train:
-	$(PYTHON_INTERPRETER) src/models/train_model.py
+	src/models/train_model.py
 
 ## Lint using flake8
 lint:
