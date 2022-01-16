@@ -9,8 +9,6 @@ from torch import nn, optim
 
 from data import mnist
 
-# 100signsline100signsline100signsline100signsline100signsline100signsline100signsline
-
 
 class TrainOREvaluate(object):
     """Helper class that will help launch class methods as commands
