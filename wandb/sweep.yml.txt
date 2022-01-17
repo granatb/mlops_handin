@@ -1,0 +1,11 @@
+program: src\models\train_model.py
+method: bayes
+metric:
+  goal: minimize
+  name: loss
+parameters: 
+  lr:
+    min: 0.001
+    max: 0.1
+  n_epochs:
+    values: [3,5]

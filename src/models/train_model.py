@@ -10,6 +10,10 @@ from model import MyAwesomeModel
 from torch import nn, optim
 from torch.utils.data import Dataset
 
+import argparse
+import wandb
+
+
 sys.path.insert(1, os.path.join(sys.path[0], ".."))
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 from data.make_dataset import MNISTdata
@@ -17,7 +21,7 @@ import logging
 
 log = logging.getLogger(__name__)
 print("Working directory : {}".format(os.getcwd()))
-@hydra.main(config_name="training_conf.yaml", config_path="config") # hydra currently supports only 1 config file
+@hydra.main(config_name="training_conf.yml", config_path="config") # hydra currently supports only 1 config file
 def main(cfg):
     print(f"configuration: \n {OmegaConf.to_yaml(cfg)}")
     os.chdir(hydra.utils.get_original_cwd())
