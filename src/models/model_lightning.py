@@ -82,6 +82,7 @@ class MyLightningModel(pl.LightningModule):
         images, labels = batch
         y_hat = self(images)
         val_loss = F.nll_loss(y_hat, labels)
+        self.log("val_loss", val_loss)
         return val_loss
 
 def main():
