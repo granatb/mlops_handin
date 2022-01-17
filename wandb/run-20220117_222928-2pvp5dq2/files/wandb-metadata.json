@@ -1,0 +1,24 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.9.7",
+    "heartbeatAt": "2022-01-17T21:29:31.330590",
+    "startedAt": "2022-01-17T21:29:28.930351",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 2070 with Max-Q Design",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "C:\\Users\\bgran\\OneDrive - Danmarks Tekniske Universitet\\studies\\Machine Learning Operations\\mlops_handin\\src\\models\\model_lightning.py",
+    "codePath": "src\\models\\model_lightning.py",
+    "git": {
+        "remote": "https://github.com/granatb/mlops_handin.git",
+        "commit": "204e729d07582e59b86499fbbdd3937b3d3d2a91"
+    },
+    "email": "bartek.granat@gmail.com",
+    "root": "C:/Users/bgran/OneDrive - Danmarks Tekniske Universitet/studies/Machine Learning Operations/mlops_handin",
+    "host": "LAPTOP-2HELCL28",
+    "username": "bgran",
+    "executable": "C:\\Users\\bgran\\anaconda3\\envs\\my_environment\\python.exe"
+}

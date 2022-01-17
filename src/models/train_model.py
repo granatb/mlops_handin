@@ -11,7 +11,6 @@ from torch import nn, optim
 from torch.utils.data import Dataset
 
 import argparse
-import wandb
 
 
 sys.path.insert(1, os.path.join(sys.path[0], ".."))
