@@ -1,12 +1,14 @@
 from typing import Callable, List, Optional, Tuple, Union
 
-import matplotlib.pyplot as plt # type: ignore
+import matplotlib.pyplot as plt  # type: ignore
 import torch
 import torch.nn.functional as F
 from torch import nn
 
 import wandb
+
 wandb.init()
+
 
 class MyAwesomeModel(nn.Module):
     def __init__(self, hidden_size: int, output_size: int, drop_p: float = 0.3) -> None:
@@ -121,7 +123,9 @@ def train(
 
                 # Turn off gradients for validation, will speed up inference
                 with torch.no_grad():
-                    test_loss, accuracy, preds, labels_test, images_test = validation(model, testloader, criterion)
+                    test_loss, accuracy, preds, labels_test, images_test = validation(
+                        model, testloader, criterion
+                    )
 
                 print(
                     "Epoch: {}/{}.. ".format(e + 1, epochs),
@@ -131,11 +135,13 @@ def train(
                 )
                 wandb.log({"loss": running_loss / print_every})
                 wandb.log({"validation_loss": test_loss / len(testloader)})
-                
+
                 table = []
                 for i in range(len(images_test)):
                     table += [[wandb.Image(images_test[i]), labels_test[i], preds[i]]]
-                table = wandb.Table(data=table, columns=["image", "label", "prediction"])
+                table = wandb.Table(
+                    data=table, columns=["image", "label", "prediction"]
+                )
                 wandb.log({"mnist_visualization": table})
 
                 train_losses.append(running_loss / print_every)

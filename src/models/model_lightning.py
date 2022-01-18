@@ -1,19 +1,19 @@
-from typing import Callable, List, Optional, Tuple, Union
 import os
 import sys
+from typing import Callable, List, Optional, Tuple, Union
 
-import matplotlib.pyplot as plt # type: ignore
+import matplotlib.pyplot as plt  # type: ignore
+import pytorch_lightning as pl
 import torch
 import torch.nn.functional as F
-from torch import nn    
-import pytorch_lightning as pl
 from pytorch_lightning import loggers
-
+from torch import nn
 from torch.utils.data import Dataset
+
 sys.path.insert(1, os.path.join(sys.path[0], ".."))
+import wandb
 from data.make_dataset import MNISTdata
 
-import wandb
 
 class MyLightningModel(pl.LightningModule):
     def __init__(self, hidden_size: int, output_size: int, drop_p: float = 0.3) -> None:
@@ -61,9 +61,8 @@ class MyLightningModel(pl.LightningModule):
 
         return F.log_softmax(self.fc2(x), dim=1)
 
-
     def training_step(self, batch, batch_idx):
-            # training_step defines the train loop. It is independent of forward
+        # training_step defines the train loop. It is independent of forward
         images, labels = batch
         x = self.arch(images)
         x = x.view(-1, self.fc1_features)
@@ -71,7 +70,7 @@ class MyLightningModel(pl.LightningModule):
         x_hat = F.log_softmax(self.fc2(x), dim=1)
         loss = F.nll_loss(x_hat, labels)
         self.log("train_loss", loss)
-        self.logger.experiment.log({'logits': wandb.Histogram(x_hat.detach().numpy())})
+        self.logger.experiment.log({"logits": wandb.Histogram(x_hat.detach().numpy())})
         return loss
 
     def configure_optimizers(self):
@@ -85,6 +84,7 @@ class MyLightningModel(pl.LightningModule):
         self.log("val_loss", val_loss)
         return val_loss
 
+
 def main():
 
     train_data = torch.load("data/processed/train.pth")
@@ -92,7 +92,7 @@ def main():
 
     trainloader = torch.utils.data.DataLoader(train_data, batch_size=64, shuffle=True)
     testloader = torch.utils.data.DataLoader(test_data, batch_size=64, shuffle=True)
-    
+
     model = MyLightningModel(128, 10)
     wd_logger = loggers.WandbLogger(name="test")
     trainer = pl.Trainer(logger=wd_logger, max_epochs=5)
