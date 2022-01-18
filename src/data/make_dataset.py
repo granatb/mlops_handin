@@ -11,7 +11,7 @@ from PIL import Image
 from torch import optim
 from torch.utils.data import DataLoader, Dataset
 from torchvision import transforms
-
+import torchdrift
 
 @click.command()
 @click.argument("input_filepath", type=click.Path(exists=True))
@@ -40,19 +40,17 @@ def main(input_filepath, output_filepath):
     Y_test = np.load(input_filepath + "/corruptmnist/test.npz")["labels"]
 
     train = MNISTdata(X_train, Y_train, transform=transform)
-    # trainloader = torch.utils.data.DataLoader(train, batch_size=64, shuffle=True)
-
     test = MNISTdata(X_test, Y_test, transform=transform)
-    # testloader = torch.utils.data.DataLoader(test, batch_size=64, shuffle=True)
+
     torch.save(train, output_filepath + "/train.pth")
     torch.save(test, output_filepath + "/test.pth")
 
-
 class MNISTdata(Dataset):
-    def __init__(self, data, targets, transform=None):
+    def __init__(self, data, targets, transform=None, additional_transform=None):
         self.data = data
         self.targets = torch.LongTensor(targets)
         self.transform = transform
+        self.additional_transform = additional_transform
 
     def __getitem__(self, index):
         x = self.data[index]
@@ -60,6 +58,9 @@ class MNISTdata(Dataset):
 
         if self.transform:
             x = self.transform(x)
+
+        if self.additional_transform:
+            x = self.additional_transform(x)
 
         return x.float(), y
 

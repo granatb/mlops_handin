@@ -1,0 +1,24 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.9.7",
+    "heartbeatAt": "2022-01-18T21:36:32.103104",
+    "startedAt": "2022-01-18T21:36:30.235123",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 2070 with Max-Q Design",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "C:\\Users\\bgran\\OneDrive - Danmarks Tekniske Universitet\\studies\\Machine Learning Operations\\mlops_handin\\src\\models\\train_model.py",
+    "codePath": "src\\models\\train_model.py",
+    "git": {
+        "remote": "https://github.com/granatb/mlops_handin.git",
+        "commit": "3b2ac8fade5935e875c8991cd31aec948644da06"
+    },
+    "email": "bartek.granat@gmail.com",
+    "root": "C:/Users/bgran/OneDrive - Danmarks Tekniske Universitet/studies/Machine Learning Operations/mlops_handin",
+    "host": "LAPTOP-2HELCL28",
+    "username": "bgran",
+    "executable": "C:\\Users\\bgran\\anaconda3\\envs\\my_environment\\python.exe"
+}

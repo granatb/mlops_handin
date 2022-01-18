@@ -13,7 +13,8 @@ from torch.utils.data import Dataset
 sys.path.insert(1, os.path.join(sys.path[0], ".."))
 import wandb
 from data.make_dataset import MNISTdata
-
+import torchdrift
+import copy
 
 class MyLightningModel(pl.LightningModule):
     def __init__(self, hidden_size: int, output_size: int, drop_p: float = 0.3) -> None:
@@ -84,6 +85,9 @@ class MyLightningModel(pl.LightningModule):
         self.log("val_loss", val_loss)
         return val_loss
 
+def corruption_function(x: torch.Tensor):
+    return torchdrift.data.functional.gaussian_blur(x, severity=2)
+
 
 def main():
 
@@ -98,6 +102,32 @@ def main():
     trainer = pl.Trainer(logger=wd_logger, max_epochs=5)
 
     trainer.fit(model, trainloader, testloader)
+
+    inputs, _ = next(iter(testloader))
+    inputs_ood = corruption_function(inputs)
+
+    N = 6
+    model.eval()
+    inps = torch.cat([inputs[:N], inputs_ood[:N]])
+    model.cpu()
+    # predictions = model.predict(inps).max(1).indices
+
+    feature_extractor = copy.deepcopy(model)
+    feature_extractor.classifier = torch.nn.Identity()
+
+    drift_detector = torchdrift.detectors.KernelMMDDriftDetector()
+    
+    torchdrift.utils.fit(trainloader, feature_extractor, drift_detector)
+
+    drift_detection_model = torch.nn.Sequential(
+        feature_extractor,
+        drift_detector
+    )
+
+    features = feature_extractor(inputs)
+    score = drift_detector(features)
+    p_val = drift_detector.compute_p_value(features)
+    print(f'score: {score}, p_val: {p_val}')
 
 
 if __name__ == "__main__":

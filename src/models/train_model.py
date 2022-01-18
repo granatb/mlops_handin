@@ -52,7 +52,7 @@ def main(cfg):
         optimizer,
         epochs=hparams["n_epochs"],
     )
-
+    
     checkpoint = {
         "hidden_size": 128,
         "output_size": 10,
@@ -61,7 +61,6 @@ def main(cfg):
     log.info("Finish!!")
 
     torch.save(checkpoint, "models/checkpoint.pth")
-
 
 if __name__ == "__main__":
     main()
