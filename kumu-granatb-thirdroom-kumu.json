@@ -1,0 +1,2289 @@
+{
+  "version": 1,
+  "name": "thirdroom_kumu",
+  "description": "",
+  "proxyImages": true,
+  "defaultMap": "map-BZT4eH2s",
+  "defaultPerspective": null,
+  "attributeRelevance": {},
+  "attributes": [
+    {
+      "_id": "attr-61zh0JHH",
+      "name": "Connection Type",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "IS_CONNECTED",
+        "IN_CASE",
+        "IN_TEAMFORCASE",
+        "DID_COURSE",
+        "DID_INTERNSHIP",
+        "IN_CHALLENGE",
+        "IN_EVENT",
+        "IS_MENTORFORCASE",
+        "IS_CONTACT",
+        "HAS_JOB",
+        "PART_OF",
+        "ADRESSING_CHALLENGE"
+      ],
+      "sort": false,
+      "cluster": false
+    },
+    {
+      "_id": "attr-m5Q4Vuiu",
+      "name": "Country",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "NA",
+        "Germany",
+        "Denmark",
+        "Sweden",
+        "Brazil",
+        null,
+        null
+      ],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-SOjOmV5d",
+      "name": "Department",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-vDEAtS0p",
+      "name": "Description",
+      "format": "text",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "none",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": false
+    },
+    {
+      "_id": "attr-DtRE0gR3",
+      "name": "Element Type",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "Person",
+        "Organization",
+        "NA",
+        "Researcher",
+        "Student",
+        "Employee",
+        "Entrepreneur",
+        "Investor",
+        "Freelancer",
+        "Broker"
+      ],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-oilYGmuU",
+      "name": "Entity_Type",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [
+        "Course",
+        "Person",
+        "Project",
+        "Event",
+        "Challenge",
+        "Internship",
+        "Job",
+        "Unit",
+        "Startup",
+        null,
+        "Community",
+        null
+      ],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-hoK9RhCP",
+      "name": "Image",
+      "format": "image",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-xe1QC9jh",
+      "name": "Label",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": false
+    },
+    {
+      "_id": "attr-5tWRpsyU",
+      "name": "Links",
+      "format": "url",
+      "private": false,
+      "limit": "none",
+      "category": "General",
+      "prompt": "none",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-BPz9Z0HT",
+      "name": "Loop Type",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "list",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": false
+    },
+    {
+      "_id": "attr-b3GRvDZu",
+      "name": "Organization",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-xypiDiRV",
+      "name": "Profile_URL",
+      "format": "url",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "none",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-2QneRSfX",
+      "name": "Tags",
+      "format": "string",
+      "private": false,
+      "limit": "none",
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-hsPHFITN",
+      "name": "Title",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    },
+    {
+      "_id": "attr-2HgQwyl4",
+      "name": "id",
+      "format": "string",
+      "private": false,
+      "limit": 1,
+      "category": "General",
+      "prompt": "autocomplete",
+      "locked": false,
+      "values": [],
+      "sort": false,
+      "cluster": true
+    }
+  ],
+  "elements": [
+    {
+      "_id": "elem-0I0TcZRO",
+      "attributes": {
+        "id": "21",
+        "label": "Ehab Saad Eddin",
+        "tags": [
+          "Digital Transformation",
+          "SDG6",
+          "Ecosystem",
+          "Clean Water",
+          "SDG13",
+          "innovation",
+          "Future Lab",
+          "water treatment"
+        ],
+        "description": "Pioneering solutions to the world’s water and climate challenges, and improve quality of life for people",
+        "country": "Denmark",
+        "entity_type": "Person",
+        "image": "https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/772306/110f1c0c-fdeb-4535-918e-2305fc18bcc0.png",
+        "links": [
+          "https://www.linkedin.com/in/ehab-saad-eddin-104396115/"
+        ],
+        "organization": "Grundfos Holding A/S",
+        "profile_url": "https://helloscience.io/user/ehabsaadeddin",
+        "title": "Ehab Saad Eddin",
+        "element type": "Researcher"
+      }
+    },
+    {
+      "_id": "elem-0jQ8kaTR",
+      "attributes": {
+        "id": "12",
+        "label": "Jeppe Nielsen",
+        "tags": [
+          "HelloScience.io",
+          "HelloScience website",
+          "HelloScience team",
+          "HelloScience Interactive Display",
+          "HelloScience development",
+          "HelloScience community",
+          "HelloScience",
+          "HelloScience film"
+        ],
+        "description": "BA in Science \nPeople and Technology  from Roskilde University\n\nPlatform managager and web designer at the Collaboratorium. Providing user support for the HelloScience community \n\nAt heart I'm caring for the user experience. My ambition is to create a website that allows sharing knowledge intuitively and connects people in a large scale social community around science projects that create impact",
+        "country": "Denmark",
+        "department": "HelloScience",
+        "entity_type": "Person",
+        "image": "https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/772306/f7cec6cc-77a7-4be6-b970-6bd22bad002b.png",
+        "organization": "The Collaboratorium",
+        "profile_url": "https://helloscience.io/user/jeppenielsen",
+        "title": "Jeppe Nielsen",
+        "element type": "Entrepreneur"
+      }
+    },
+    {
+      "_id": "elem-4F6MmGi7",
+      "attributes": {
+        "id": "25",
+        "label": "Sebastian Reinhold Sørensen",
+        "tags": [
+          "Biotechnology",
+          "microbiomics",
+          "innovation",
+          "Water",
+          "life science",
+          "Bacteriology",
+          "Environmental Biotechnology",
+          "SDGs",
+          "Disruptive Technologies",
+          "Clean Water",
+          "water treatment",
+          "Industrial microbiology"
+        ],
+        "description": "Microbiologist with more than 20 years of experience from R&amp;D and leadership in industry and academia. Passionate about biotechnological solutions for the most pressing global challenges, such as substituting synthetic chemicals in our daily life with biological alternatives – and ensuring clean and safe drinking water.",
+        "country": "Denmark",
+        "department": "Microbial Discovery, R&D",
+        "entity_type": "Person",
+        "image": "https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/772306/7a35b6bd-1c5a-4fc8-9b85-30592faee320.png",
+        "links": [
+          "https://www.linkedin.com/in/sebastian-reinhold-s%C3%B8rensen-1a2b3a2/"
+        ],
+        "organization": "Novozymes A/S",
+        "profile_url": "https://helloscience.io/user/e7ca5eb70f7348c6e26fd63d876da5cd",
+        "title": "Sebastian Reinhold Sørensen",
+        "element type": "Researcher"
+      }
+    },
+    {
+      "_id": "elem-4S532mxh",
+      "attributes": {
+        "id": "startupid1",
+        "label": "Argumentus",
+        "tags": [
+          "NA"
+        ],
+        "description": "NA",
+        "country": "NA",
+        "department": "NA",
+        "entity_type": "Startup",
+        "image": "NA",
+        "links": [
+          "NA"
+        ],
+        "organization": "NA",
+        "profile_url": "NA",
+        "title": "Argumentus",
+        "element type": "NA"
+      }
+    },
+    {
+      "_id": "elem-5GfWJLnj",
+      "attributes": {
+        "id": "jobid1",
+        "label": "Illustrator at Thirdroom",
+        "tags": [
+          "NA"
+        ],
+        "description": "NA",
+        "country": "NA",
+        "department": "NA",
+        "entity_type": "Job",
+        "image": "NA",
+        "links": [
+          "NA"
+        ],
+        "organization": "NA",
+        "profile_url": "NA",
+        "title": "Illustrator at Thirdroom",
+        "element type": "NA"
+      }
+    },
+    {
+      "_id": "elem-6QrgJi7b",
+      "attributes": {
+        "id": "caseid1198",
+        "label": "New Way of Working (WoW)",
+        "tags": [
+          "New way of working",
+          "collaboration",
+          "Sprint"
+        ],
+        "description": "Our learnings from the New Ways of Working and different startup best practices were collected here.",
+        "country": "NA",
+        "department": "NA",
+        "entity_type": "Project",
+        "image": "https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/08497781-1509-4a41-8992-572a61f218e3.png",
+        "links": [
+          "NA"
+        ],
+        "organization": "NA",
+        "profile_url": "NA",
+        "title": "New Way of Working (WoW)",
+        "element type": "NA"
+      }
+    },
+    {
+      "_id": "elem-6cKYxgB4",
+      "attributes": {
+        "id": "internshipid1",
+        "label": "Movie making internship",
+        "tags": [
+          "NA"
+        ],
+        "description": "NA",
+        "country": "NA",
+        "department": "NA",
+        "entity_type": "Internship",
+        "image": "NA",
+        "links": [
+          "NA"
+        ],
+        "organization": "NA",
+        "profile_url": "NA",
+        "title": "Movie making internship",
+        "element type": "NA"
+      }
+    },
+    {
+      "_id": "elem-83C0FR1G",
+      "attributes": {
+        "id": "courseid25",
+        "label": "Art History",
+        "tags": [
+          "NA"
+        ],
+        "description": "NA",
+        "country": "NA",
+        "department": "NA",
+        "entity_type": "Course",
+        "image": "NA",
+        "links": [
+          "NA"
+        ],
+        "organization": "NA",
+        "profile_url": "NA",
+        "title": "Art History",
+        "element type": "NA"
+      }
+    },
+    {
+      "_id": "elem-GT0ID6fx",
+      "attributes": {
+        "id": "27",
+        "label": "Kirk Schnorr",
+        "tags": [
+          "Clean Water",
+          "Novozymes",
+          "enzymes"
+        ],
+        "description": "Scientist and value creater inside the bioeconomy space. Interests in secreted biodiversity, soil, plant and water areas as well as nature's solutions to the worlds problems.",
+        "country": "Denmark",
+        "entity_type": "Person",
+        "image": "https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/772306/c5e9f404-9a6a-4694-95b9-637bfac3e55c.png",
+        "links": [
+          "https://www.linkedin.com/in/kirk-schnorr-319b6a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BROfAsuZORceajmqT3%2FM5eQ%3D%3D"
+        ],
+        "organization": "Novozymes A/S",
+        "profile_url": "https://helloscience.io/user/d53c7cc4841331cdec82a3acc6892ae0",
+        "title": "Kirk Schnorr",
+        "element type": "Researcher"
+      }
+    },
+    {
+      "_id": "elem-Jy7jHGCw",
+      "attributes": {
+        "id": "caseid3463",
+        "label": "Science in the Sky",
+        "tags": [
+          "SDGimpact",
+          "Scienceinthesky",
+          "Mentors",
+          "Mapping"
+        ],
+        "description": "Science in the Sky is HelloScience new mentor program",
+        "country": "NA",
+        "department": "NA",
+        "entity_type": "Project",
+        "image": "https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/be33e5c6-2be9-4397-8401-25e82b653ee1.png",
+        "links": [
+          "NA"
+        ],
+        "organization": "NA",
+        "profile_url": "NA",
+        "title": "Science in the Sky",
+        "element type": "NA"
+      }
+    },
+    {
+      "_id": "elem-WKZTxs9p",
+      "attributes": {
+        "id": "128",
+        "label": "Veronika Nesverova",
+        "tags": [
+          "Proteins",
+          "Prevention of lifestyle-related diseases",
+          "Biochemistry"
+        ],
+        "description": "Research scientist in the field of protein structural biology, nature lover, advocate for disease prevention and healthy lifestyle",
+        "country": "Sweden",
+        "department": "Center for Molecular Protein Science",
+        "entity_type": "Person",
+        "image": "https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/772306/61d8e33e-ca14-41ed-84e5-ecf1749533ba.png",
+        "organization": "Lund University",
+        "profile_url": "https://helloscience.io/user/veronikanesverova",
+        "title": "Veronika Nesverova",
+        "element type": "Researcher"
+      }
+    },
+    {
+      "_id": "elem-ZBoODbrU",
+      "attributes": {
+        "id": "56",
+        "label": "Florian Isermeyer",
+        "tags": [
+          "Business Development",
+          "Partnership",
+          "collaboration"
+        ],
+        "description": "Florian has been engaged in New Business Development activities with Novozymes since 2011. He is currently focusing on Human Health and building a venture for Novozymes around remedies to food sensitivities (lactose, gluten, etc.). He comes with an education from Stockholm School of Economics and the University of St. Gallen. Outside of work, he is a keen swimmer, road biker and soccer enthusiast.",
+        "country": "Germany",
+        "entity_type": "Person",
+        "image": "https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/772306/416ea374-5fee-40c6-9e82-fbea3473d0b1.png",
+        "organization": "Novozymes Berlin",
+        "profile_url": "https://helloscience.io/user/7dcc40a8ff0b8fe9122889f84383cd",
+        "title": "Florian Isermeyer",
+        "element type": "Investor"
+      }
+    },
+    {
+      "_id": "elem-aWKc3gji",
+      "attributes": {
+        "id": "9",
+        "label": "Alfred Birkegaard",
+        "tags": [
+          "Partnership",
+          "HelloScience",
+          "Philosophy of Science",
+          "collaboration",
+          "SDGs"
+        ],
+        "description": "Background; Ph.d in Philosophy & DIY filmmaker. \n\n\nAfter BA, MA and a Ph.d in Philosophy I left the spheres of academia and migrated to the get my hands dirty with hardcore entrepreneurship and start-up collaboration in a big corporate. \n\nSkilled in leadership, filmmaking, design and orchestration collaboration across different media, across hierarchical structures and with people with very different skills and mindset.\n\nWhen I’m not doing HelloScience, I enjoy trail running, deep forest exploration and my three girls at home \n\nPlease reach out if you have any questions, want be member or have a start-up that we should onboarded onboard to HelloScience. \n\nBest Alfred",
+        "country": "Denmark",
+        "entity_type": "Person",
+        "image": "https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/afca7a2f-3c65-4960-8ed1-1c9e584dcd02.png",
+        "links": [
+          "https://www.linkedin.com/in/alfredbirkegaard/"
+        ],
+        "organization": "Novozymes",
+        "profile_url": "https://helloscience.io/user/alfredbirkegaard",
+        "title": "Alfred Birkegaard",
+        "element type": "Entrepreneur"
+      }
+    },
+    {
+      "_id": "elem-d7ZRFmMd",
+      "attributes": {
+        "id": "challengeid1",
+        "label": "Vertical Farming Challenge",
+        "tags": [
+          "NA"
+        ],
+        "description": "NA",
+        "country": "NA",
+        "department": "NA",
+        "entity_type": "Challenge",
+        "image": "NA",
+        "links": [
+          "NA"
+        ],
+        "organization": "NA",
+        "profile_url": "NA",
+        "title": "Vertical Farming Challenge",
+        "element type": "NA"
+      }
+    },
+    {
+      "_id": "elem-fo0QPVKw",
+      "attributes": {
+        "id": "caseid675",
+        "label": "The HelloScience Interactive display",
+        "tags": [
+          "Touch screen",
+          "HelloScience Interactive Display",
+          "HelloScience",
+          "HelloScience website",
+          "Grundfos"
+        ],
+        "description": "Development of the HelloScience Interactive Display at Novozymes in collaboration with Grundfos. \n\nThe display will be located at the reception where Novozymes staff and guest can view the HelloScience startup cases and connect with the diverse community of innovators collaborating on the HelloScience platform. \n\nIn the near future HelloScience unveil the new HelloScience platform at The HelloScience Grand Opening, where you can explore the new website on the display",
+        "country": "NA",
+        "department": "NA",
+        "entity_type": "Project",
+        "image": "https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/8483a3bd-0c4f-440c-84fd-2b7fd84b9a62.png",
+        "links": [
+          "NA"
+        ],
+        "organization": "NA",
+        "profile_url": "NA",
+        "title": "The HelloScience Interactive display",
+        "element type": "NA"
+      }
+    },
+    {
+      "_id": "elem-javUFAOP",
+      "attributes": {
+        "id": "294",
+        "label": "Jannika Nowak",
+        "tags": [
+          "Illustration",
+          "photoshop",
+          "creative thinking",
+          "Climate",
+          "Sustainability",
+          "Adobe Creative Suite",
+          "Arctic Opportunity Explorers",
+          "Communications"
+        ],
+        "description": ".",
+        "country": "Sweden",
+        "department": "Sustainable Communication & Design",
+        "entity_type": "Person",
+        "image": "https://helloscience.io/wp-content/uploads/user-avatars/IMG_4693-1-512x512.jpg",
+        "organization": "Jönköpink University",
+        "profile_url": "https://helloscience.io/user/a9bb8a8ffeadacad256d1f77d61c0cb9",
+        "title": "Jannika Nowak",
+        "element type": "Researcher"
+      }
+    },
+    {
+      "_id": "elem-kfSGIoH2",
+      "attributes": {
+        "id": "unitid1",
+        "label": "Thirdroom",
+        "tags": [
+          "NA"
+        ],
+        "description": "NA",
+        "country": "NA",
+        "department": "NA",
+        "entity_type": "Community",
+        "image": "https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/ab836458-b4d6-4c9d-9350-60499d01dcac.png",
+        "links": [
+          "NA"
+        ],
+        "organization": "NA",
+        "profile_url": "NA",
+        "title": "Thirdroom",
+        "element type": "NA"
+      }
+    },
+    {
+      "_id": "elem-nQ9UAbkH",
+      "attributes": {
+        "id": "132",
+        "label": "Sandie Bondesen",
+        "tags": [
+          "Biochemistry",
+          "Industrial master thesis",
+          "Cell biology",
+          "Synapse"
+        ],
+        "description": "Newly graduate. M.Sc. in biochemistry with specialization in immunology and metabolism",
+        "country": "Denmark",
+        "entity_type": "Person",
+        "image": "https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/772306/be55574f-9f41-42d2-99bc-4a17d8704c81.png",
+        "organization": "No where",
+        "profile_url": "https://helloscience.io/user/sandie-bondesen",
+        "title": "Sandie Bondesen",
+        "element type": "Student"
+      }
+    },
+    {
+      "_id": "elem-nT1htaCW",
+      "attributes": {
+        "id": "sdgid25",
+        "label": "Data Science Summit",
+        "tags": [
+          "NA"
+        ],
+        "description": "NA",
+        "country": "NA",
+        "department": "NA",
+        "entity_type": "Event",
+        "image": "NA",
+        "links": [
+          "NA"
+        ],
+        "organization": "NA",
+        "profile_url": "NA",
+        "title": "Data Science Summit",
+        "element type": "NA"
+      }
+    },
+    {
+      "_id": "elem-oOREYMCC",
+      "attributes": {
+        "id": "17",
+        "label": "Pedro Parraguez",
+        "tags": [
+          "Startups",
+          "collaboration",
+          "complex systems",
+          "network analysis",
+          "innovation",
+          "External Innovation"
+        ],
+        "description": "I’m the co-founder and CEO of Dataverz, a technology-based startup where we develop decision-support systems to tackle complex societal challenges. I’m fascinated by the power of human imagination, self-organised large-scale collaborations, and the intricacies of the design process.\n\nBefore this adventure, I was a postdoctoral researcher at the Engineering Systems Division in DTU Management Engineering, the Deputy Director of Innovation and Entrepreneurship for the School of Management of the Pontificia Universidad Católica de Chile, run another start-up, did some consultancy, have been university lecturer, and worked in a few other jobs related with science and technology.",
+        "country": "Denmark",
+        "entity_type": "Person",
+        "image": "https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/772306/4e621d7c-1aae-41ac-978b-8800e24e1c97.png",
+        "links": [
+          "https://twitter.com/parraguezr",
+          "https://www.linkedin.com/in/pedro.parraguez"
+        ],
+        "organization": "Dataverz",
+        "profile_url": "https://helloscience.io/user/parraguezr",
+        "title": "Pedro Parraguez",
+        "element type": "Entrepreneur"
+      }
+    },
+    {
+      "_id": "elem-oyBjO5gQ",
+      "attributes": {
+        "id": "51",
+        "label": "Victor Guadalupe",
+        "tags": [
+          "Latin America",
+          "Industrial microbiology",
+          "Yeast",
+          "Sugarcane",
+          "Biotechnology"
+        ],
+        "description": "I'm a high energy and passionate scientist whose passion is to transform into reality biotechnology innovations and impact the world to build better lives with biology. When I'm not busy with that, I'm enjoying spending time with my budding family in Brazil.",
+        "country": "Brazil",
+        "department": "Applied R&D Bioenergy & Feed",
+        "entity_type": "Person",
+        "image": "https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/772306/fc890100-94a6-461c-95ad-9866945e9fc0.png",
+        "links": [
+          "https://www.linkedin.com/in/vguadalupemedina/",
+          "https://twitter.com/bendrix_vg"
+        ],
+        "organization": "Novozymes",
+        "profile_url": "https://helloscience.io/user/victor-guadalupe-latam",
+        "title": "Victor Guadalupe",
+        "element type": "Broker"
+      }
+    },
+    {
+      "_id": "elem-rXNwuPtu",
+      "attributes": {
+        "id": "59",
+        "label": "Julia Massow",
+        "tags": [
+          "design",
+          "HelloScience team",
+          "Illustration"
+        ],
+        "description": "Julia is an illustrator and graphic designer currently living in Hamburg. \n\nShe is most passionate about capturing humanity in faces and fascinated by the use of art as a tool to connect and to approach complex topics in new ways.",
+        "country": "Germany",
+        "entity_type": "Person",
+        "image": "https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/a9a1397c-e26b-455b-a643-a72b12dd2028.png",
+        "links": [
+          "https://www.instagram.com/juliamassow/"
+        ],
+        "organization": "Collaboratorium",
+        "profile_url": "https://helloscience.io/user/juliamassow",
+        "title": "Julia Massow",
+        "element type": "Freelancer"
+      }
+    },
+    {
+      "_id": "elem-tg1NCav1",
+      "attributes": {
+        "id": "32",
+        "label": "Mads Bjørnvad",
+        "tags": [
+          "Disruptive Technologies",
+          "Biotechnology",
+          "microbiomics"
+        ],
+        "description": "Being an experienced leader in R&D of Biotechnology I immerse myself into collaborations around creating solutions to the greater challenges in the world. \nHaving a special relationship with India and my friends there I prefer working on real life issues as they are experienced in a diverse country like India. Health, Agriculture, Clean Energy etc. are main care abouts.\nAs head of Technology Scouting in R&T Novozymes I am immersed in the latest technologies, start-ups and Incubator environments.",
+        "country": "Denmark",
+        "entity_type": "Person",
+        "image": "https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/772306/61805b5c-adf0-407a-b8ae-758c07666e81.png",
+        "organization": "Novozymes",
+        "profile_url": "https://helloscience.io/user/950eb427d0bdd55ba711d029dcfbcf01",
+        "title": "Mads Bjørnvad",
+        "element type": "Freelancer"
+      }
+    },
+    {
+      "_id": "elem-ubJnYnic",
+      "attributes": {
+        "id": "2",
+        "label": "Jens Ahrengot Boddum",
+        "tags": [
+          "UI Design",
+          "Web Development",
+          "HelloScience team"
+        ],
+        "description": "Hi, nice to meet you!\n\nMy name is Jens and I'm a senior full-stack developer.\n\nI'm experienced in leading teams and working on projects where you need to satisfy the needs of many different stakeholders. I pride myself in my process and workflows, as they ensure that projects are kept on track and meet the schedule and budget available.",
+        "country": "Denmark",
+        "entity_type": "Person",
+        "image": "https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/53bd5d38-d02a-4f0a-8886-3a081d52410d.png",
+        "links": [
+          "https://ahrengot.com/",
+          "https://stackoverflow.com/story/ahrengot",
+          "https://github.com/ahrengot"
+        ],
+        "organization": "Collaboratorium",
+        "profile_url": "https://helloscience.io/user/jens-boddum",
+        "title": "Jens Ahrengot Boddum",
+        "element type": "Broker"
+      }
+    },
+    {
+      "_id": "elem-x7a18CKj",
+      "attributes": {
+        "id": "internshipid2",
+        "label": "Social media manager summer internship",
+        "tags": [
+          "NA"
+        ],
+        "description": "NA",
+        "country": "NA",
+        "department": "NA",
+        "entity_type": "Internship",
+        "image": "NA",
+        "links": [
+          "NA"
+        ],
+        "organization": "NA",
+        "profile_url": "NA",
+        "title": "Social media manager summer internship",
+        "element type": "NA"
+      }
+    },
+    {
+      "_id": "elem-xhAgg47B",
+      "attributes": {
+        "id": "courseid24",
+        "label": "Video post production",
+        "tags": [
+          "NA"
+        ],
+        "description": "NA",
+        "country": "NA",
+        "department": "NA",
+        "entity_type": "Course",
+        "image": "NA",
+        "links": [
+          "NA"
+        ],
+        "organization": "NA",
+        "profile_url": "NA",
+        "title": "Video post production",
+        "element type": "NA"
+      }
+    }
+  ],
+  "connections": [
+    {
+      "_id": "conn-067o8l3I",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_TEAMFORCASE"
+      },
+      "from": "elem-oyBjO5gQ",
+      "to": "elem-6QrgJi7b"
+    },
+    {
+      "_id": "conn-1Zg4WEdZ",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_TEAMFORCASE"
+      },
+      "from": "elem-rXNwuPtu",
+      "to": "elem-Jy7jHGCw"
+    },
+    {
+      "_id": "conn-4Ax67fUq",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_TEAMFORCASE"
+      },
+      "from": "elem-rXNwuPtu",
+      "to": "elem-fo0QPVKw"
+    },
+    {
+      "_id": "conn-5VFd9f0w",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_CASE"
+      },
+      "from": "elem-oyBjO5gQ",
+      "to": "elem-6QrgJi7b"
+    },
+    {
+      "_id": "conn-8JQ04vJJ",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_TEAMFORCASE"
+      },
+      "from": "elem-ZBoODbrU",
+      "to": "elem-6QrgJi7b"
+    },
+    {
+      "_id": "conn-DDp69ZKM",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "CONTACT PERSON",
+        "connection type": "IS_CONTACT"
+      },
+      "from": "elem-javUFAOP",
+      "to": "elem-6cKYxgB4"
+    },
+    {
+      "_id": "conn-DR3LII6B",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_CASE"
+      },
+      "from": "elem-ubJnYnic",
+      "to": "elem-Jy7jHGCw"
+    },
+    {
+      "_id": "conn-E6gijexi",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_CASE"
+      },
+      "from": "elem-aWKc3gji",
+      "to": "elem-6QrgJi7b"
+    },
+    {
+      "_id": "conn-Fqkxn8nj",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "PART_OF"
+      },
+      "from": "elem-rXNwuPtu",
+      "to": "elem-4S532mxh"
+    },
+    {
+      "_id": "conn-GLhf49qF",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_CASE"
+      },
+      "from": "elem-aWKc3gji",
+      "to": "elem-fo0QPVKw"
+    },
+    {
+      "_id": "conn-HK6tHZ16",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IS_CONNECTED"
+      },
+      "from": "elem-rXNwuPtu",
+      "to": "elem-nQ9UAbkH"
+    },
+    {
+      "_id": "conn-I0fpCakf",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "DID_COURSE"
+      },
+      "from": "elem-rXNwuPtu",
+      "to": "elem-xhAgg47B"
+    },
+    {
+      "_id": "conn-IFKchSMV",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_CASE"
+      },
+      "from": "elem-oOREYMCC",
+      "to": "elem-Jy7jHGCw"
+    },
+    {
+      "_id": "conn-IRuR0pcH",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IS_MENTORFORCASE"
+      },
+      "from": "elem-aWKc3gji",
+      "to": "elem-6QrgJi7b"
+    },
+    {
+      "_id": "conn-KPuwVOvV",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "ADRESSING_CHALLENGE"
+      },
+      "from": "elem-d7ZRFmMd",
+      "to": "elem-fo0QPVKw"
+    },
+    {
+      "_id": "conn-PRul1XuB",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_TEAMFORCASE"
+      },
+      "from": "elem-0jQ8kaTR",
+      "to": "elem-fo0QPVKw"
+    },
+    {
+      "_id": "conn-R5ZA1To6",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "DID_COURSE"
+      },
+      "from": "elem-rXNwuPtu",
+      "to": "elem-83C0FR1G"
+    },
+    {
+      "_id": "conn-TMPR6x17",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IS_MENTORFORCASE"
+      },
+      "from": "elem-GT0ID6fx",
+      "to": "elem-Jy7jHGCw"
+    },
+    {
+      "_id": "conn-Tfs6eUBo",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IS_CONTACT"
+      },
+      "from": "elem-aWKc3gji",
+      "to": "elem-5GfWJLnj"
+    },
+    {
+      "_id": "conn-Vp9BdV8K",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_TEAMFORCASE"
+      },
+      "from": "elem-aWKc3gji",
+      "to": "elem-fo0QPVKw"
+    },
+    {
+      "_id": "conn-WrjsQchx",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "HAS_JOB"
+      },
+      "from": "elem-rXNwuPtu",
+      "to": "elem-5GfWJLnj"
+    },
+    {
+      "_id": "conn-bApmRVbf",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_CASE"
+      },
+      "from": "elem-rXNwuPtu",
+      "to": "elem-fo0QPVKw"
+    },
+    {
+      "_id": "conn-bvfa38bJ",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_TEAMFORCASE"
+      },
+      "from": "elem-rXNwuPtu",
+      "to": "elem-6QrgJi7b"
+    },
+    {
+      "_id": "conn-h11IGXYi",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "label": "CONTACT PERSON",
+        "connection type": "IS_CONTACT"
+      },
+      "from": "elem-tg1NCav1",
+      "to": "elem-x7a18CKj"
+    },
+    {
+      "_id": "conn-hCR99GKn",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_EVENT"
+      },
+      "from": "elem-rXNwuPtu",
+      "to": "elem-nT1htaCW"
+    },
+    {
+      "_id": "conn-iVlwDUIA",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_CASE"
+      },
+      "from": "elem-rXNwuPtu",
+      "to": "elem-6QrgJi7b"
+    },
+    {
+      "_id": "conn-ihMFcvDe",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IS_CONNECTED"
+      },
+      "from": "elem-rXNwuPtu",
+      "to": "elem-WKZTxs9p"
+    },
+    {
+      "_id": "conn-kaMqRquR",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_CASE"
+      },
+      "from": "elem-tg1NCav1",
+      "to": "elem-Jy7jHGCw"
+    },
+    {
+      "_id": "conn-lsBnJF1a",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_TEAMFORCASE"
+      },
+      "from": "elem-aWKc3gji",
+      "to": "elem-Jy7jHGCw"
+    },
+    {
+      "_id": "conn-mCurIgbn",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_CASE"
+      },
+      "from": "elem-aWKc3gji",
+      "to": "elem-Jy7jHGCw"
+    },
+    {
+      "_id": "conn-mHAJW6KW",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "DID_INTERNSHIP"
+      },
+      "from": "elem-rXNwuPtu",
+      "to": "elem-6cKYxgB4"
+    },
+    {
+      "_id": "conn-mbgbZngy",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_CHALLENGE"
+      },
+      "from": "elem-rXNwuPtu",
+      "to": "elem-d7ZRFmMd"
+    },
+    {
+      "_id": "conn-mqmpCF4s",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_CASE"
+      },
+      "from": "elem-rXNwuPtu",
+      "to": "elem-Jy7jHGCw"
+    },
+    {
+      "_id": "conn-oZ0FLGUe",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "DID_INTERNSHIP"
+      },
+      "from": "elem-rXNwuPtu",
+      "to": "elem-x7a18CKj"
+    },
+    {
+      "_id": "conn-od4gbnRl",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_CASE"
+      },
+      "from": "elem-GT0ID6fx",
+      "to": "elem-Jy7jHGCw"
+    },
+    {
+      "_id": "conn-pN7fj1I0",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_CASE"
+      },
+      "from": "elem-ubJnYnic",
+      "to": "elem-fo0QPVKw"
+    },
+    {
+      "_id": "conn-ptvPMNxG",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-fo0QPVKw",
+      "to": "elem-kfSGIoH2"
+    },
+    {
+      "_id": "conn-qZahOijH",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {},
+      "from": "elem-x7a18CKj",
+      "to": "elem-kfSGIoH2"
+    },
+    {
+      "_id": "conn-rTP8RqUF",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IS_MENTORFORCASE"
+      },
+      "from": "elem-4F6MmGi7",
+      "to": "elem-Jy7jHGCw"
+    },
+    {
+      "_id": "conn-vecRO97n",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_CASE"
+      },
+      "from": "elem-4F6MmGi7",
+      "to": "elem-Jy7jHGCw"
+    },
+    {
+      "_id": "conn-wDO1mepi",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "PART_OF"
+      },
+      "from": "elem-rXNwuPtu",
+      "to": "elem-kfSGIoH2"
+    },
+    {
+      "_id": "conn-x2Uiaa3l",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_CASE"
+      },
+      "from": "elem-0jQ8kaTR",
+      "to": "elem-fo0QPVKw"
+    },
+    {
+      "_id": "conn-xRbIgkp4",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_TEAMFORCASE"
+      },
+      "from": "elem-0I0TcZRO",
+      "to": "elem-fo0QPVKw"
+    },
+    {
+      "_id": "conn-xg8TfsBD",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_TEAMFORCASE"
+      },
+      "from": "elem-oOREYMCC",
+      "to": "elem-Jy7jHGCw"
+    },
+    {
+      "_id": "conn-xpYHdR2d",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_CASE"
+      },
+      "from": "elem-ZBoODbrU",
+      "to": "elem-6QrgJi7b"
+    },
+    {
+      "_id": "conn-xpxnsLfX",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "PART_OF"
+      },
+      "from": "elem-aWKc3gji",
+      "to": "elem-kfSGIoH2"
+    },
+    {
+      "_id": "conn-ywjojgeP",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_CASE"
+      },
+      "from": "elem-0I0TcZRO",
+      "to": "elem-fo0QPVKw"
+    },
+    {
+      "_id": "conn-ze6QxYIq",
+      "direction": "undirected",
+      "delayed": false,
+      "reversed": false,
+      "attributes": {
+        "connection type": "IN_TEAMFORCASE"
+      },
+      "from": "elem-tg1NCav1",
+      "to": "elem-Jy7jHGCw"
+    }
+  ],
+  "loops": [],
+  "maps": [
+    {
+      "_id": "map-BZT4eH2s",
+      "name": "Personal entity graph",
+      "description": "",
+      "scale": 1,
+      "center": {
+        "x": 0,
+        "y": 0
+      },
+      "defaultPerspective": "pers-PGGiN75a",
+      "defaultElementBehavior": "floating",
+      "defaultConnectionDirection": "directed",
+      "elements": [
+        {
+          "_id": "node-2lgmTETL",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-4S532mxh"
+        },
+        {
+          "_id": "node-40wEbBZU",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-83C0FR1G"
+        },
+        {
+          "_id": "node-6g3KJqCf",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-aWKc3gji"
+        },
+        {
+          "_id": "node-93glOwTt",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-nQ9UAbkH"
+        },
+        {
+          "_id": "node-CqcxfogA",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-javUFAOP"
+        },
+        {
+          "_id": "node-E6ZuRaDY",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-4F6MmGi7"
+        },
+        {
+          "_id": "node-G0AaCTck",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-fo0QPVKw"
+        },
+        {
+          "_id": "node-G69RMZ0k",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-rXNwuPtu"
+        },
+        {
+          "_id": "node-QHlyVLEU",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-oyBjO5gQ"
+        },
+        {
+          "_id": "node-SckHiDer",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-d7ZRFmMd"
+        },
+        {
+          "_id": "node-V8TC55f6",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-6QrgJi7b"
+        },
+        {
+          "_id": "node-WJTJXhN6",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-x7a18CKj"
+        },
+        {
+          "_id": "node-YtDkgPXW",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-GT0ID6fx"
+        },
+        {
+          "_id": "node-ZoGd4evS",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-oOREYMCC"
+        },
+        {
+          "_id": "node-dsPdvmtg",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-ZBoODbrU"
+        },
+        {
+          "_id": "node-eD8M3FIk",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-ubJnYnic"
+        },
+        {
+          "_id": "node-eZhOqbi5",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-WKZTxs9p"
+        },
+        {
+          "_id": "node-iqXDs23m",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-nT1htaCW"
+        },
+        {
+          "_id": "node-kkNuLIEd",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-6cKYxgB4"
+        },
+        {
+          "_id": "node-ng34o9mo",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-xhAgg47B"
+        },
+        {
+          "_id": "node-tshBHKbQ",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-0I0TcZRO"
+        },
+        {
+          "_id": "node-uAqf2aDG",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-0jQ8kaTR"
+        },
+        {
+          "_id": "node-uatzdtmN",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-5GfWJLnj"
+        },
+        {
+          "_id": "node-wyY0hIzv",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-kfSGIoH2"
+        },
+        {
+          "_id": "node-xK9LEUWK",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-tg1NCav1"
+        },
+        {
+          "_id": "node-zY6YvDDf",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-Jy7jHGCw"
+        }
+      ],
+      "connections": [
+        {
+          "_id": "edge-4BWJhm2Q",
+          "style": {},
+          "connection": "conn-HK6tHZ16"
+        },
+        {
+          "_id": "edge-4Tj3up1i",
+          "style": {},
+          "connection": "conn-Fqkxn8nj"
+        },
+        {
+          "_id": "edge-5HpCTduC",
+          "style": {},
+          "connection": "conn-wDO1mepi"
+        },
+        {
+          "_id": "edge-5dcyrSLV",
+          "style": {},
+          "connection": "conn-I0fpCakf"
+        },
+        {
+          "_id": "edge-663xvkw8",
+          "style": {},
+          "connection": "conn-xpxnsLfX"
+        },
+        {
+          "_id": "edge-6AMvTCNu",
+          "style": {},
+          "connection": "conn-PRul1XuB"
+        },
+        {
+          "_id": "edge-6UHIRHI9",
+          "style": {},
+          "connection": "conn-kaMqRquR"
+        },
+        {
+          "_id": "edge-7i3DA8bI",
+          "style": {},
+          "connection": "conn-8JQ04vJJ"
+        },
+        {
+          "_id": "edge-8guc72eu",
+          "style": {},
+          "connection": "conn-4Ax67fUq"
+        },
+        {
+          "_id": "edge-94ab0ZKa",
+          "style": {},
+          "connection": "conn-ze6QxYIq"
+        },
+        {
+          "_id": "edge-BAjsHdjd",
+          "style": {},
+          "connection": "conn-TMPR6x17"
+        },
+        {
+          "_id": "edge-CNXFgWc6",
+          "style": {},
+          "connection": "conn-WrjsQchx"
+        },
+        {
+          "_id": "edge-CvdjGAQs",
+          "style": {},
+          "connection": "conn-KPuwVOvV"
+        },
+        {
+          "_id": "edge-DoAYC7jv",
+          "style": {},
+          "connection": "conn-DDp69ZKM"
+        },
+        {
+          "_id": "edge-FYR66GF5",
+          "style": {},
+          "connection": "conn-lsBnJF1a"
+        },
+        {
+          "_id": "edge-HRgjGlki",
+          "style": {},
+          "connection": "conn-5VFd9f0w"
+        },
+        {
+          "_id": "edge-MwX6kkAp",
+          "style": {},
+          "connection": "conn-od4gbnRl"
+        },
+        {
+          "_id": "edge-PO98Pz45",
+          "style": {},
+          "connection": "conn-ihMFcvDe"
+        },
+        {
+          "_id": "edge-QKLgRML2",
+          "style": {},
+          "connection": "conn-iVlwDUIA"
+        },
+        {
+          "_id": "edge-QTQLw2xS",
+          "style": {},
+          "connection": "conn-mbgbZngy"
+        },
+        {
+          "_id": "edge-Ru1pvbEL",
+          "style": {},
+          "connection": "conn-x2Uiaa3l"
+        },
+        {
+          "_id": "edge-S1QIvJid",
+          "style": {},
+          "connection": "conn-R5ZA1To6"
+        },
+        {
+          "_id": "edge-SHNdfk7W",
+          "style": {},
+          "connection": "conn-xg8TfsBD"
+        },
+        {
+          "_id": "edge-UVuh87Sn",
+          "style": {},
+          "connection": "conn-mCurIgbn"
+        },
+        {
+          "_id": "edge-VubzqCIe",
+          "style": {},
+          "connection": "conn-xRbIgkp4"
+        },
+        {
+          "_id": "edge-ZLZ69JWK",
+          "style": {},
+          "connection": "conn-067o8l3I"
+        },
+        {
+          "_id": "edge-aAQW9oJc",
+          "style": {},
+          "connection": "conn-rTP8RqUF"
+        },
+        {
+          "_id": "edge-bGbZhZio",
+          "style": {},
+          "connection": "conn-1Zg4WEdZ"
+        },
+        {
+          "_id": "edge-czOWa9lu",
+          "style": {},
+          "connection": "conn-oZ0FLGUe"
+        },
+        {
+          "_id": "edge-dRJBo46k",
+          "style": {},
+          "connection": "conn-GLhf49qF"
+        },
+        {
+          "_id": "edge-fa8KInpJ",
+          "style": {},
+          "connection": "conn-pN7fj1I0"
+        },
+        {
+          "_id": "edge-grdT0vQm",
+          "style": {},
+          "connection": "conn-DR3LII6B"
+        },
+        {
+          "_id": "edge-h5FSNpoq",
+          "style": {},
+          "connection": "conn-IRuR0pcH"
+        },
+        {
+          "_id": "edge-h5MTc862",
+          "style": {},
+          "connection": "conn-vecRO97n"
+        },
+        {
+          "_id": "edge-i1mA0fDL",
+          "style": {},
+          "connection": "conn-bApmRVbf"
+        },
+        {
+          "_id": "edge-imBGVYiL",
+          "style": {},
+          "connection": "conn-E6gijexi"
+        },
+        {
+          "_id": "edge-jRkTrYS7",
+          "style": {},
+          "connection": "conn-mHAJW6KW"
+        },
+        {
+          "_id": "edge-k0RUs3xC",
+          "style": {},
+          "connection": "conn-IFKchSMV"
+        },
+        {
+          "_id": "edge-oI9pARDq",
+          "style": {},
+          "connection": "conn-Tfs6eUBo"
+        },
+        {
+          "_id": "edge-rZpVz8AA",
+          "style": {},
+          "connection": "conn-Vp9BdV8K"
+        },
+        {
+          "_id": "edge-s5Yg2j9a",
+          "style": {},
+          "connection": "conn-hCR99GKn"
+        },
+        {
+          "_id": "edge-sdxg6rWw",
+          "style": {},
+          "connection": "conn-h11IGXYi"
+        },
+        {
+          "_id": "edge-sieVlqHx",
+          "style": {},
+          "connection": "conn-mqmpCF4s"
+        },
+        {
+          "_id": "edge-u5HAQVP3",
+          "style": {},
+          "connection": "conn-bvfa38bJ"
+        },
+        {
+          "_id": "edge-vNYCZTyk",
+          "style": {},
+          "connection": "conn-xpYHdR2d"
+        },
+        {
+          "_id": "edge-yhCm1CKD",
+          "style": {},
+          "connection": "conn-ywjojgeP"
+        }
+      ],
+      "loops": []
+    },
+    {
+      "_id": "map-W1AVQhAw",
+      "name": "Personal view",
+      "description": "",
+      "scale": 1,
+      "center": {
+        "x": 0,
+        "y": 0
+      },
+      "defaultPerspective": "pers-YbGGZUel",
+      "defaultElementBehavior": "floating",
+      "defaultConnectionDirection": "undirected",
+      "elements": [
+        {
+          "_id": "node-3voACy6T",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-nT1htaCW"
+        },
+        {
+          "_id": "node-5dvFgEpc",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-nQ9UAbkH"
+        },
+        {
+          "_id": "node-8yddpyRw",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-ubJnYnic"
+        },
+        {
+          "_id": "node-DRRcAXCS",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-fo0QPVKw"
+        },
+        {
+          "_id": "node-GW0VkhxP",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-tg1NCav1"
+        },
+        {
+          "_id": "node-H0zkDRsM",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-d7ZRFmMd"
+        },
+        {
+          "_id": "node-IG56Ug55",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-aWKc3gji"
+        },
+        {
+          "_id": "node-MBN1ThWr",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-GT0ID6fx"
+        },
+        {
+          "_id": "node-OES7R12d",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-x7a18CKj"
+        },
+        {
+          "_id": "node-P74q7QmS",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-oOREYMCC"
+        },
+        {
+          "_id": "node-RPZ2IBun",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-83C0FR1G"
+        },
+        {
+          "_id": "node-Tovx9GTp",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-WKZTxs9p"
+        },
+        {
+          "_id": "node-TwWxYs3N",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-kfSGIoH2"
+        },
+        {
+          "_id": "node-TztlpVRF",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-6QrgJi7b"
+        },
+        {
+          "_id": "node-WX8Ub5pQ",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-rXNwuPtu"
+        },
+        {
+          "_id": "node-Z60oBhwn",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-xhAgg47B"
+        },
+        {
+          "_id": "node-aKWQbgWa",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-javUFAOP"
+        },
+        {
+          "_id": "node-eac7aCih",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-0I0TcZRO"
+        },
+        {
+          "_id": "node-gGU9AD2c",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-4F6MmGi7"
+        },
+        {
+          "_id": "node-kQNMXgn5",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-ZBoODbrU"
+        },
+        {
+          "_id": "node-lalj28LY",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-4S532mxh"
+        },
+        {
+          "_id": "node-mLUPcDH7",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-5GfWJLnj"
+        },
+        {
+          "_id": "node-pj4v5Uqk",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-oyBjO5gQ"
+        },
+        {
+          "_id": "node-qSz8NtGH",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-0jQ8kaTR"
+        },
+        {
+          "_id": "node-ri0sYiYJ",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-Jy7jHGCw"
+        },
+        {
+          "_id": "node-wr8mNh13",
+          "position": null,
+          "pinned": false,
+          "style": {},
+          "element": "elem-6cKYxgB4"
+        }
+      ],
+      "connections": [
+        {
+          "_id": "edge-0mvt5egm",
+          "style": {},
+          "connection": "conn-xg8TfsBD"
+        },
+        {
+          "_id": "edge-25FEMaLR",
+          "style": {},
+          "connection": "conn-mCurIgbn"
+        },
+        {
+          "_id": "edge-2IwALS7a",
+          "style": {},
+          "connection": "conn-qZahOijH"
+        },
+        {
+          "_id": "edge-2g7PAY3H",
+          "style": {},
+          "connection": "conn-DDp69ZKM"
+        },
+        {
+          "_id": "edge-35SNbuuA",
+          "style": {},
+          "connection": "conn-I0fpCakf"
+        },
+        {
+          "_id": "edge-3ARYfvsz",
+          "style": {},
+          "connection": "conn-xpxnsLfX"
+        },
+        {
+          "_id": "edge-6lZRF7XM",
+          "style": {},
+          "connection": "conn-pN7fj1I0"
+        },
+        {
+          "_id": "edge-7N0xUNYh",
+          "style": {},
+          "connection": "conn-DR3LII6B"
+        },
+        {
+          "_id": "edge-8zN6xOpb",
+          "style": {},
+          "connection": "conn-wDO1mepi"
+        },
+        {
+          "_id": "edge-9HC87g5Q",
+          "style": {},
+          "connection": "conn-WrjsQchx"
+        },
+        {
+          "_id": "edge-9pduTfbL",
+          "style": {},
+          "connection": "conn-ptvPMNxG"
+        },
+        {
+          "_id": "edge-CxZCXQLs",
+          "style": {},
+          "connection": "conn-IRuR0pcH"
+        },
+        {
+          "_id": "edge-E1606cgg",
+          "style": {},
+          "connection": "conn-ze6QxYIq"
+        },
+        {
+          "_id": "edge-HApxHJIn",
+          "style": {},
+          "connection": "conn-067o8l3I"
+        },
+        {
+          "_id": "edge-J48tZ9EL",
+          "style": {},
+          "connection": "conn-R5ZA1To6"
+        },
+        {
+          "_id": "edge-JPok9oHu",
+          "style": {},
+          "connection": "conn-1Zg4WEdZ"
+        },
+        {
+          "_id": "edge-Ku986KzB",
+          "style": {},
+          "connection": "conn-IFKchSMV"
+        },
+        {
+          "_id": "edge-Kuiwxh93",
+          "style": {},
+          "connection": "conn-xRbIgkp4"
+        },
+        {
+          "_id": "edge-MCsEzthU",
+          "style": {},
+          "connection": "conn-Fqkxn8nj"
+        },
+        {
+          "_id": "edge-Oxj36Li4",
+          "style": {},
+          "connection": "conn-od4gbnRl"
+        },
+        {
+          "_id": "edge-P6Q2Masp",
+          "style": {},
+          "connection": "conn-5VFd9f0w"
+        },
+        {
+          "_id": "edge-QLLw1NZM",
+          "style": {},
+          "connection": "conn-bApmRVbf"
+        },
+        {
+          "_id": "edge-R29b1gcV",
+          "style": {},
+          "connection": "conn-4Ax67fUq"
+        },
+        {
+          "_id": "edge-S4SQzEuq",
+          "style": {},
+          "connection": "conn-xpYHdR2d"
+        },
+        {
+          "_id": "edge-UwzRvb73",
+          "style": {},
+          "connection": "conn-E6gijexi"
+        },
+        {
+          "_id": "edge-VXGtyXPC",
+          "style": {},
+          "connection": "conn-lsBnJF1a"
+        },
+        {
+          "_id": "edge-W7VBhFOI",
+          "style": {},
+          "connection": "conn-KPuwVOvV"
+        },
+        {
+          "_id": "edge-XfA8FnCf",
+          "style": {},
+          "connection": "conn-rTP8RqUF"
+        },
+        {
+          "_id": "edge-ZWzGGIik",
+          "style": {},
+          "connection": "conn-hCR99GKn"
+        },
+        {
+          "_id": "edge-csArD7Kj",
+          "style": {},
+          "connection": "conn-8JQ04vJJ"
+        },
+        {
+          "_id": "edge-e7vSqwsO",
+          "style": {},
+          "connection": "conn-h11IGXYi"
+        },
+        {
+          "_id": "edge-eRpCzFtr",
+          "style": {},
+          "connection": "conn-mHAJW6KW"
+        },
+        {
+          "_id": "edge-eykscFAa",
+          "style": {},
+          "connection": "conn-HK6tHZ16"
+        },
+        {
+          "_id": "edge-fHqVUlWR",
+          "style": {},
+          "connection": "conn-kaMqRquR"
+        },
+        {
+          "_id": "edge-h9Fd2FUF",
+          "style": {},
+          "connection": "conn-Vp9BdV8K"
+        },
+        {
+          "_id": "edge-jYoDIgD1",
+          "style": {},
+          "connection": "conn-iVlwDUIA"
+        },
+        {
+          "_id": "edge-k4UduDho",
+          "style": {},
+          "connection": "conn-bvfa38bJ"
+        },
+        {
+          "_id": "edge-kGHuWmRG",
+          "style": {},
+          "connection": "conn-ywjojgeP"
+        },
+        {
+          "_id": "edge-lH3E7s6X",
+          "style": {},
+          "connection": "conn-mqmpCF4s"
+        },
+        {
+          "_id": "edge-nrCvVOFK",
+          "style": {},
+          "connection": "conn-vecRO97n"
+        },
+        {
+          "_id": "edge-pup2c6GB",
+          "style": {},
+          "connection": "conn-PRul1XuB"
+        },
+        {
+          "_id": "edge-sLI2lFB1",
+          "style": {},
+          "connection": "conn-mbgbZngy"
+        },
+        {
+          "_id": "edge-sRWfkEAm",
+          "style": {},
+          "connection": "conn-TMPR6x17"
+        },
+        {
+          "_id": "edge-twzf0Xz3",
+          "style": {},
+          "connection": "conn-GLhf49qF"
+        },
+        {
+          "_id": "edge-x3J53FED",
+          "style": {},
+          "connection": "conn-Tfs6eUBo"
+        },
+        {
+          "_id": "edge-y5DydwHm",
+          "style": {},
+          "connection": "conn-ihMFcvDe"
+        },
+        {
+          "_id": "edge-yrBT474j",
+          "style": {},
+          "connection": "conn-x2Uiaa3l"
+        },
+        {
+          "_id": "edge-zZi9tUrS",
+          "style": {},
+          "connection": "conn-oZ0FLGUe"
+        }
+      ],
+      "loops": []
+    }
+  ],
+  "perspectives": [
+    {
+      "_id": "pers-IrSeP4j5",
+      "name": "Julia View",
+      "style": "@controls {\n  toolbar: true;\n\n  top {\n    filter {\n      target: element;\n      by: \"entity_type\";\n      as: buttons;\n      multiple: true;\n      default: select-all;\n    }\n  }\n\n  top-right {}\n}\n\n@settings {\n  template: stakeholder;\n  theme: light;\n  connection-curvature: 0.1;\n  font-size: 29;\n  connection-size: 2;\n  layout-preset: auto;\n  layout: force;\n  layout-particle-charge: 1500;\n  ignore-orphans: true;\n  element-font-size: 50;\n  layout-spring-strength: 0.5;\n  element-color: categorize(\"Element Type\", #FF7C79 \"Student\", #006F88 \"Researcher\", #87A062 \"Broker\", #EFB140 \"Freelancer\", #60A4C6 \"Entrepreneur\", #256953 \"Investor\");\n  connection-color: #000000;\n  element-size: 58;\n  focus: #59 out 1;\n}\n\nelement[\"entity_type\"=\"Person\"] {\n  size: 94;\n}\n\n/* Project */\nelement[\"entity_type\"=\"Project\"] {\n  size: 120;\n  shape: rectangle;\n  height: 300;\n}\n\n/* Unit */\nelement[\"entity_type\"=\"Community\"] {\n  width: 200;\n  shape: rectangle;\n  height: 200;\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"Person\"] {\n  shadow-color: categorize(\"Element Type\", #FF7C79 \"Student\", #006F88 \"Researcher\", #87A062 \"Broker\", #EFB140 \"Freelancer\", #60A4C6 \"Entrepreneur\", #256953 \"Investor\");\n  shadow-opacity: 0.8;\n  shadow-size: 1.15;\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"Project\"] {\n  shadow-color: #000000;\n  shadow-opacity: 1;\n  shadow-size: 0.08;\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"Course\"] {\n  image-url: url(https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/58816329-8b2f-47b6-9050-30065235ca1f.png);\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"Internship\"] {\n  image-url: url(https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/7717d5bc-e3b9-4b69-beac-ebb187617a28.png);\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"Event\"] {\n  image-url: url(https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/45e9bc94-c18a-423d-af01-b3981bd3e396.png);\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"Event\"] {\n  image-url: url(https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/54a2d2d7-796c-4dc4-a02a-344d24c12160.png);\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"Challenge\"] {\n  image-url: url(https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/dd17dfe3-7830-457b-92c3-42691db92b3d.png);\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"Job\"] {\n  image-url: url(https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/2f14dd6d-71fd-4cf3-ae86-1ea31011135d.png);\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"Challenge\"] {\n  image-url: url(https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/df3d7747-b13f-4331-9d23-fdc8a7b564f7.png);\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"Job\"] {\n  image-url: url(https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/744bf871-0f37-4bfe-a548-27854c535e57.png);\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"Internship\"] {\n  image-url: url(https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/a9eceee8-2e2b-49ac-a38c-d902251da744.png);\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"Course\"] {\n  image-url: url(https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/a807a76a-c7a9-4011-88f0-8429244899f8.png);\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"Event\"] {\n  image-url: url(https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/cafeab8b-bdda-4d2a-ab9e-c212ad471a06.png);\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"Startup\"] {\n  image-url: url(https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/dbcbb14d-3a1e-442d-b8f1-142e499a2398.png);\n}\n\n"
+    },
+    {
+      "_id": "pers-Cimgjcm4",
+      "name": "People Connections",
+      "style": "@controls {\n  top-right {}\n}\n\n@settings {\n  template: stakeholder;\n  bridge: [\"entity_type\"=\"Project\"];\n  theme: light;\n  connection-curvature: 0.05;\n  font-size: 29;\n  connection-size: 2;\n  layout-preset: auto;\n  layout: force;\n  layout-particle-charge: 1000;\n  ignore-orphans: true;\n  element-font-size: 50;\n  layout-spring-strength: 0.1;\n  element-color: categorize(\"Element Type\", #FF7C79 \"Student\", #006F88 \"Researcher\", #87A062 \"Broker\", #EFB140 \"Freelancer\", #60A4C6 \"Entrepreneur\", #256953 \"Investor\");\n  connection-color: #000000;\n  include: isconnected-connection, incase-connection, inteamforcase-connection, ismentorforcase-connection, undefined-connection, element, loop;\n  focus: #59 out 1;\n  ignore: #elem-kfSGIoH2, #elem-0jQ8kaTR;\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"User\"] {\n  shadow-color: categorize(\"Element Type\", #FF7C79 \"Student\", #006F88 \"Researcher\", #87A062 \"Broker\", #EFB140 \"Freelancer\", #60A4C6 \"Entrepreneur\", #256953 \"Investor\");\n  shadow-opacity: 0.8;\n  shadow-size: 1.2;\n}\n\n/* Connected */\nconnection[\"Connection Type\"=\"IS_CONNECTED\"] {\n  size: 1;\n  style: dashed;\n}\n\n/* Collaborating */\nconnection[\"Connection Type\"=\"\"] {\n  size: 1;\n  style: solid;\n}\n\n"
+    },
+    {
+      "_id": "pers-YbGGZUel",
+      "name": "Unit View",
+      "style": "@controls {\n  toolbar: true;\n\n  top {\n    filter {\n      target: element;\n      by: \"entity_type\";\n      as: buttons;\n      multiple: true;\n      default: select-all;\n    }\n  }\n\n  top-right {}\n}\n\n@settings {\n  template: stakeholder;\n  theme: light;\n  connection-curvature: 0.1;\n  font-size: 29;\n  connection-size: 2;\n  layout-preset: auto;\n  layout: force;\n  layout-particle-charge: 1500;\n  ignore-orphans: true;\n  element-font-size: 50;\n  layout-spring-strength: 0.5;\n  element-color: categorize(\"Element Type\", #FF7C79 \"Student\", #006F88 \"Researcher\", #87A062 \"Broker\", #EFB140 \"Freelancer\", #60A4C6 \"Entrepreneur\", #256953 \"Investor\");\n  connection-color: #000000;\n  element-size: 58;\n  focus: #unitid1 out 1;\n}\n\nelement[\"entity_type\"=\"Person\"] {\n  size: 94;\n}\n\n/* Project */\nelement[\"entity_type\"=\"Project\"] {\n  size: 120;\n  shape: rectangle;\n  height: 300;\n}\n\n/* Unit */\nelement[\"entity_type\"=\"Community\"] {\n  width: 200;\n  shape: rectangle;\n  height: 200;\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"Person\"] {\n  shadow-color: categorize(\"Element Type\", #FF7C79 \"Student\", #006F88 \"Researcher\", #87A062 \"Broker\", #EFB140 \"Freelancer\", #60A4C6 \"Entrepreneur\", #256953 \"Investor\");\n  shadow-opacity: 0.8;\n  shadow-size: 1.15;\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"Project\"] {\n  shadow-color: #000000;\n  shadow-opacity: 1;\n  shadow-size: 0.08;\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"Course\"] {\n  image-url: url(https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/58816329-8b2f-47b6-9050-30065235ca1f.png);\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"Internship\"] {\n  image-url: url(https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/7717d5bc-e3b9-4b69-beac-ebb187617a28.png);\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"Event\"] {\n  image-url: url(https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/45e9bc94-c18a-423d-af01-b3981bd3e396.png);\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"Event\"] {\n  image-url: url(https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/54a2d2d7-796c-4dc4-a02a-344d24c12160.png);\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"Challenge\"] {\n  image-url: url(https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/dd17dfe3-7830-457b-92c3-42691db92b3d.png);\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"Job\"] {\n  image-url: url(https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/2f14dd6d-71fd-4cf3-ae86-1ea31011135d.png);\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"Challenge\"] {\n  image-url: url(https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/df3d7747-b13f-4331-9d23-fdc8a7b564f7.png);\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"Job\"] {\n  image-url: url(https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/744bf871-0f37-4bfe-a548-27854c535e57.png);\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"Internship\"] {\n  image-url: url(https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/a9eceee8-2e2b-49ac-a38c-d902251da744.png);\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"Course\"] {\n  image-url: url(https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/a807a76a-c7a9-4011-88f0-8429244899f8.png);\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"Event\"] {\n  image-url: url(https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/cafeab8b-bdda-4d2a-ab9e-c212ad471a06.png);\n}\n\n/* elements:  */\n[\"Entity_Type\"=\"Startup\"] {\n  image-url: url(https://s3.amazonaws.com/cloud.kumu.io/accounts/335152/735578/dbcbb14d-3a1e-442d-b8f1-142e499a2398.png);\n}\n\n"
+    }
+  ]
+}
